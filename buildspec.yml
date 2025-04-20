@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18.x
+      nodejs: 18.17.0
     commands:
       - echo Installing dependencies...
       - npm install --legacy-peer-deps
@@ -27,4 +27,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: build 
+  base-directory: build
