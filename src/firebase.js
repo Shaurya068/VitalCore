@@ -3,14 +3,14 @@ import { getFirestore, collection, addDoc, getDocs, getDoc, setDoc, query, where
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage"; // ✅ Import Storage correctly
 
-// Your Firebase configuration
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCVF4Obh71lI1_QTDezFRh36DYDG6EPBgo",
-  authDomain: "healthifydb.firebaseapp.com",
-  projectId: "healthifydb",
-  storageBucket: "healthifydb.appspot.com",
-  messagingSenderId: "930394252812",
-  appId: "1:930394252812:web:cc995e0ad26c7ad1e1b029"
+  apiKey: "AIzaSyBZujEOHugWiglT5Y8cEdnO8IM2eUwKSm0",
+  authDomain: "vitalcore-f4bec.firebaseapp.com",
+  projectId: "vitalcore-f4bec",
+  storageBucket: "vitalcore-f4bec.firebasestorage.app",
+  messagingSenderId: "867970697154",
+  appId: "1:867970697154:web:0f54afa194ac82c1f6f85b"
 };
 
 // Initialize Firebase

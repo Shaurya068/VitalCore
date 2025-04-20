@@ -10,7 +10,7 @@ import backgroundImage from "../aboutusback.png";
 import "../style.css";
 
 const Login = () => {
-  const [role, setRole] = useState(""); 
+  const [role, setRole] = useState("");
   const [hospitalName, setHospitalName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -59,16 +59,16 @@ const Login = () => {
   };
 
   return (
-    <Box sx={{ 
-      minHeight: "100vh", 
-      display: "flex", 
-      flexDirection: "column", 
-      backgroundImage: `url(${backgroundImage})`, 
+    <Box sx={{
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
     }}>
-      
+
       {/* Navigation Header */}
       <Box sx={{ background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "10px 0" }}>
         <Container>
@@ -76,9 +76,6 @@ const Login = () => {
             <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px" }}>Home</Button>
             <Button component={Link} to="/about" sx={{ color: "white", fontSize: "18px" }}>About Us</Button>
             <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px" }}>Services</Button>
-            <Button component={Link} to="/contact" variant="contained" sx={{ backgroundColor: "#0d3b66", color: "white", borderRadius: "25px", padding: "10px 25px", fontSize: "16px", fontWeight: "bold", "&:hover": { backgroundColor: "#09234B" } }}>
-              Contact
-            </Button>
           </Box>
         </Container>
       </Box>
@@ -155,7 +152,7 @@ const Login = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#1976D2", color: "white", textAlign: "center", padding: "20px", marginTop: "auto" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
     </Box>
   );

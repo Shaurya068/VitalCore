@@ -6,9 +6,9 @@ import backgroundImage from "../aboutusback.png"; // Make sure the file exists
 const OurServices = () => {
   return (
     <Box sx={{ minHeight: "100vh", backgroundColor: "#f5f5f5" }}>
-      
+
       {/* Header */}
-      <AppBar position="static" sx={{background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "10px 0" }}>
+      <AppBar position="static" sx={{ background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "10px 0" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "center", gap: "40px" }}>
           <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px", letterSpacing: "1px" }}>
             Home
@@ -18,9 +18,6 @@ const OurServices = () => {
           </Button>
           <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px", letterSpacing: "1px" }}>
             Services
-          </Button>
-          <Button component={Link} to="/contact" sx={{ color: "white", fontSize: "18px", letterSpacing: "1px" }}>
-            Contact
           </Button>
         </Toolbar>
       </AppBar>
@@ -43,7 +40,7 @@ const OurServices = () => {
             Our Services
           </Typography>
           <Typography variant="h6" sx={{ maxWidth: "700px", margin: "auto", opacity: "0.9", fontSize: "20px" }}>
-            Discover how Healthify helps you manage patient records, consult with doctors, and schedule appointments seamlessly.
+            Discover how VitalCore helps you manage patient records, consult with doctors, and schedule appointments seamlessly.
           </Typography>
         </Container>
       </Box>
@@ -55,7 +52,7 @@ const OurServices = () => {
             What We Offer
           </Typography>
           <Grid container spacing={4} justifyContent="center">
-            
+
             {/* Patient Records Management */}
             <Grid item xs={12} sm={6} md={4}>
               <Paper sx={{ padding: "30px", minHeight: "180px", textAlign: "center", borderRadius: "15px", transition: "0.3s", "&:hover": { boxShadow: "0px 4px 30px rgba(0,0,0,0.15)", transform: "translateY(-5px)" } }}>
@@ -124,7 +121,7 @@ const OurServices = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#1976D2", color: "white", textAlign: "center", padding: "20px", marginTop: "50px" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
 
     </Box>

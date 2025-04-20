@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { 
-  Container, Box, TextField, Button, Typography, Paper, MenuItem, Select, FormControl, InputLabel 
+import {
+  Container, Box, TextField, Button, Typography, Paper, MenuItem, Select, FormControl, InputLabel
 } from "@mui/material";
 import LockIcon from "@mui/icons-material/Lock";
 import { Link, useNavigate } from "react-router-dom";
@@ -8,10 +8,10 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../firebase"; // Firebase authentication & Firestore
 import { doc, setDoc } from "firebase/firestore";
 import backgroundImage from "../aboutusback.png";
-import "../style.css"; 
+import "../style.css";
 
 const SignUp = () => {
-  const [role, setRole] = useState(""); 
+  const [role, setRole] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -93,16 +93,16 @@ const SignUp = () => {
   };
 
   return (
-    <Box sx={{ 
-      minHeight: "100vh", 
-      display: "flex", 
-      flexDirection: "column", 
-      backgroundImage: `url(${backgroundImage})`, 
+    <Box sx={{
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
     }}>
-      
+
       {/* Navigation Header */}
       <Box sx={{ background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "10px 0" }}>
         <Container>
@@ -123,7 +123,7 @@ const SignUp = () => {
             <Box textAlign="center" mb={3}>
               <LockIcon sx={{ fontSize: 40, color: "#1976D2" }} />
               <Typography variant="h5" fontWeight="bold">Create an Account</Typography>
-              <Typography variant="body2" color="textSecondary">Join Healthify to manage your healthcare data</Typography>
+              <Typography variant="body2" color="textSecondary">Join VitalCore to manage your healthcare data</Typography>
             </Box>
 
             {/* Role Selection */}

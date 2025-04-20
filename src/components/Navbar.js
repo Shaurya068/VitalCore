@@ -38,7 +38,7 @@ const Navbar = () => {
             textTransform: "uppercase",
           }}
         >
-          Healthify
+          VitalCore
         </Typography>
 
         {/* Center: Navigation Links */}
@@ -64,8 +64,8 @@ const Navbar = () => {
                   user.role === "doctor"
                     ? "/doctor-dashboard"
                     : user.role === "hospital"
-                    ? "/admin-dashboard"
-                    : "/patient-dashboard"
+                      ? "/admin-dashboard"
+                      : "/patient-dashboard"
                 }
                 variant="outlined"
                 sx={{

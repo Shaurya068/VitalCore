@@ -13,7 +13,6 @@ import PatientDashboard from "./components/PatientDashboard";
 import AdminDashboard from "./components/AdminDashboard";
 import DashboardSelection from "./components/DashboardSelection";
 import AppointmentBooking from "./components/AppointmentBooking";
-import Contact from "./components/Contact";
 import PatientRecords from "./components/PatientRecords";
 import { AuthProvider, useAuth } from "./components/AuthContext";
 

@@ -41,7 +41,6 @@ const Home = () => {
               <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px" }}>Home</Button>
               <Button component={Link} to="/about" sx={{ color: "white", fontSize: "18px" }}>About Us</Button>
               <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px" }}>Services</Button>
-              <Button component={Link} to="/contact" sx={{ color: "white", fontSize: "18px" }}>Contact</Button>
             </Box>
 
             {/* Right Section: Dashboard & Auth Buttons */}
@@ -75,21 +74,21 @@ const Home = () => {
           <Container>
             <Grid container spacing={4} alignItems="center">
               <Grid item xs={12} md={6}>
-                <Box sx={{ 
-                  backgroundImage: `url(${homeimg})`, 
-                  backgroundSize: "cover", 
-                  backgroundPosition: "center bottom", 
-                  backgroundRepeat: "no-repeat", 
-                  height: "500px", 
-                  width: "650px", 
-                  transform: "scale(1.4)", 
+                <Box sx={{
+                  backgroundImage: `url(${homeimg})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center bottom",
+                  backgroundRepeat: "no-repeat",
+                  height: "500px",
+                  width: "650px",
+                  transform: "scale(1.4)",
                   marginLeft: "-110px"
                 }} />
               </Grid>
               <Grid item xs={12} md={6}>
                 <Box sx={{ marginLeft: "160px" }}>
                   <Typography variant="h2" sx={{ fontWeight: "900", letterSpacing: "2px", textShadow: "2px 2px 5px rgba(0,0,0,0.2)", fontSize: "4.5rem", fontFamily: "'Montserrat', sans-serif", marginBottom: "20px" }}>
-                    Welcome to Healthify
+                    Welcome to VitalCore
                   </Typography>
                   <Typography variant="h6" sx={{ maxWidth: "600px", opacity: "0.9", fontSize: "20px", textAlign: "justify", lineHeight: "1.6" }}>
                     Revolutionizing healthcare through smart technology. Experience seamless patient care, instant appointment, and secure medical records - all in one place.
@@ -124,7 +123,7 @@ const Home = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#1976D2", color: "white", textAlign: "center", padding: "20px", marginTop: "auto" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved. By 422 and 441. </Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved. By 422 and 441. </Typography>
       </Box>
 
     </Box>

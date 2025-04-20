@@ -46,8 +46,8 @@ const DashboardSelection = () => {
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Paper
                   sx={{
-                    height: "200px", 
-                    width: "100%",  
+                    height: "200px",
+                    width: "100%",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -65,11 +65,11 @@ const DashboardSelection = () => {
                   <Typography variant="h6" fontWeight="bold" color="#2c5364" sx={{ mb: 2 }}>
                     {role.title}
                   </Typography>
-                  <Button 
-                    component={Link} 
-                    to={role.link} 
-                    variant="contained" 
-                    color="primary" 
+                  <Button
+                    component={Link}
+                    to={role.link}
+                    variant="contained"
+                    color="primary"
                     sx={{ borderRadius: "25px", fontWeight: "bold", fontSize: "16px" }}
                   >
                     Go to Dashboard
@@ -83,7 +83,7 @@ const DashboardSelection = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#0f2027", color: "white", textAlign: "center", padding: "20px", marginTop: "auto" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
     </Box>
   );

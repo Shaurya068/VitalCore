@@ -115,7 +115,7 @@ const AdminDashboard = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#0f2027", color: "white", textAlign: "center", padding: "20px", marginTop: "auto" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
     </Box>
   );

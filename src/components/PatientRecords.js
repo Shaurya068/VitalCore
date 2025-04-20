@@ -46,8 +46,8 @@ const PatientRecords = () => {
       <AppBar position="static" sx={{ background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "10px 0" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "center", gap: "40px" }}>
           <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px" }}>Home</Button>
+          <Button component={Link} to="/about" sx={{ color: "white", fontSize: "18px" }}>About Us</Button>
           <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px" }}>Services</Button>
-          <Button component={Link} to="/contact" sx={{ color: "white", fontSize: "18px" }}>Contact</Button>
         </Toolbar>
       </AppBar>
 

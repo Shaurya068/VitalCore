@@ -43,7 +43,7 @@ const PatientDashboard = () => {
 
   return (
     <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column", backgroundColor: "#f5f5f5" }}>
-      
+
       {/* Header */}
       <Box sx={{ background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "20px 0" }}>
         <Container>
@@ -72,7 +72,7 @@ const PatientDashboard = () => {
                 <Typography variant="h6" sx={{ marginBottom: "10px" }}><strong>Contact Number:</strong> {patient.contactNumber}</Typography>
                 <Typography variant="h6" sx={{ marginBottom: "10px" }}><strong>Date of Birth:</strong> {patient.dob}</Typography>
               </Paper>
-              
+
               {/* Appointments Section */}
               <Typography variant="h5" fontWeight="bold" textAlign="center" mb={3} color="#2c5364">
                 Your Appointments
@@ -107,7 +107,7 @@ const PatientDashboard = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#0f2027", color: "white", textAlign: "center", padding: "20px", marginTop: "auto" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
     </Box>
   );

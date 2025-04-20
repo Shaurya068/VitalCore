@@ -6,16 +6,13 @@ import backgroundImage from "../aboutusback.png"; // Ensure this image exists
 const AboutUs = () => {
   return (
     <Box sx={{ minHeight: "100vh", backgroundColor: "#f5f5f5" }}>
-      
+
       {/* Header - Matches Home & Services */}
       <AppBar position="static" sx={{ background: "linear-gradient(to right, #2c5364, #0f2027)", padding: "10px 0" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "center", gap: "40px" }}>
           <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px", letterSpacing: "1px" }}>Home</Button>
           <Button component={Link} to="/about" sx={{ color: "white", fontSize: "18px", letterSpacing: "1px" }}>About Us</Button>
           <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px", letterSpacing: "1px" }}>Services</Button>
-          <Button component={Link} to="/contact" sx={{ color: "white", fontSize: "18px", letterSpacing: "1px" }}>
-            Contact
-          </Button>
         </Toolbar>
       </AppBar>
 
@@ -33,7 +30,7 @@ const AboutUs = () => {
         }}
       >
         <Container>
-          <Typography variant="h2" sx={{ fontWeight: "bold", letterSpacing: "1px", textShadow: "2px 2px 5px rgba(0,0,0,0.2)" }}>About Healthify</Typography>
+          <Typography variant="h2" sx={{ fontWeight: "bold", letterSpacing: "1px", textShadow: "2px 2px 5px rgba(0,0,0,0.2)" }}>About VitalCore</Typography>
           <Typography variant="h6" sx={{ maxWidth: "700px", margin: "auto", opacity: "0.9", fontSize: "20px" }}>
             Empowering healthcare with seamless data management and innovative solutions for patients and doctors.
           </Typography>
@@ -44,7 +41,7 @@ const AboutUs = () => {
       <Container sx={{ padding: "60px 0", textAlign: "center" }}>
         <Typography variant="h4" sx={{ fontWeight: "bold", letterSpacing: "1px", marginBottom: "30px" }}>Our Vision</Typography>
         <Typography variant="body1" sx={{ maxWidth: "800px", margin: "auto", fontSize: "18px", lineHeight: "1.6", opacity: "0.8" }}>
-          At Healthify, we envision a world where healthcare is simplified through technology. Our platform connects patients and doctors effortlessly, making medical data management seamless, appointments hassle-free, and healthcare accessible for all.
+          At VitalCore, we envision a world where healthcare is simplified through technology. Our platform connects patients and doctors effortlessly, making medical data management seamless, appointments hassle-free, and healthcare accessible for all.
         </Typography>
       </Container>
 
@@ -106,7 +103,7 @@ const AboutUs = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#1976D2", color: "white", textAlign: "center", padding: "20px", marginTop: "50px" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
 
     </Box>

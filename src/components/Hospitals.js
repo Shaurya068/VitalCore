@@ -10,9 +10,9 @@ import {
   CircularProgress,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { db } from "../firebase"; 
+import { db } from "../firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import backgroundImage from "../aboutusback.png"; 
+import backgroundImage from "../aboutusback.png";
 
 const Hospitals = () => {
   const [hospitals, setHospitals] = useState([]);
@@ -49,7 +49,6 @@ const Hospitals = () => {
         <Toolbar sx={{ display: "flex", justifyContent: "center", gap: "40px" }}>
           <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px" }}>Home</Button>
           <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px" }}>Services</Button>
-          <Button component={Link} to="/contact" variant="contained" sx={{ backgroundColor: "#0d3b66", color: "white", borderRadius: "25px", padding: "10px 25px", fontSize: "16px", fontWeight: "bold", "&:hover": { backgroundColor: "#09234B" } }}>Contact</Button>
         </Toolbar>
       </AppBar>
 
@@ -151,7 +150,7 @@ const Hospitals = () => {
 
       {/* Footer */}
       <Box sx={{ backgroundColor: "#1976D2", color: "white", textAlign: "center", padding: "20px", marginTop: "auto" }}>
-        <Typography variant="body2">© 2025 Healthify. All rights reserved.</Typography>
+        <Typography variant="body2">© 2025 VitalCore. All rights reserved.</Typography>
       </Box>
     </Box>
   );

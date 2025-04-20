@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { 
-  Box, Container, Typography, TextField, Button, MenuItem, Grid, Paper 
+import {
+  Box, Container, Typography, TextField, Button, MenuItem, Grid, Paper
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import { db, auth } from "../firebase"; 
+import { db, auth } from "../firebase";
 import { collection, addDoc, getDocs, query, where, doc, getDoc } from "firebase/firestore";
 import backgroundImage from "../aboutusback.png";
 
@@ -18,8 +18,8 @@ const AppointmentBooking = () => {
     patientId: "",
   });
 
-  const [doctors, setDoctors] = useState([]); 
-  const [loading, setLoading] = useState(true); 
+  const [doctors, setDoctors] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   // Fetch patient details from Firestore
@@ -89,12 +89,12 @@ const AppointmentBooking = () => {
     e.preventDefault();
     try {
       const selectedDoctor = doctors.find((doc) => doc.name === formData.doctor);
-  
+
       if (!selectedDoctor) {
         alert("Please select a valid doctor.");
         return;
       }
-  
+
       const newAppointment = {
         patientId: formData.patientId,
         patientName: formData.name,
@@ -106,12 +106,12 @@ const AppointmentBooking = () => {
         status: "Scheduled",
         createdAt: new Date(),
       };
-  
+
       // Write to Firestore
       await addDoc(collection(db, "appointments"), newAppointment);
-  
+
       alert(`✅ Appointment booked successfully!`);
-  
+
       setFormData((prevData) => ({
         ...prevData,
         date: "",
@@ -133,8 +133,8 @@ const AppointmentBooking = () => {
           <Box display="flex" justifyContent="space-between" alignItems="center">
             <Box display="flex" gap="40px">
               <Button component={Link} to="/" sx={{ color: "white", fontWeight: "bold", fontSize: "18px" }}>Home</Button>
+              <Button component={Link} to="/about" sx={{ color: "white", fontSize: "18px" }}>About Us</Button>
               <Button component={Link} to="/services" sx={{ color: "white", fontSize: "18px" }}>Services</Button>
-              <Button component={Link} to="/contact" variant="contained" sx={{ backgroundColor: "#0d3b66", color: "white", borderRadius: "25px", padding: "10px 25px", fontSize: "16px" }}>Contact</Button>
             </Box>
           </Box>
         </Container>
@@ -159,13 +159,13 @@ const AppointmentBooking = () => {
                 <Typography variant="h4" fontWeight="bold" gutterBottom>Book an Appointment</Typography>
 
                 {error && <Typography color="error" textAlign="center">{error}</Typography>}
-                
+
                 <form onSubmit={handleSubmit}>
                   <TextField fullWidth label="Full Name" name="name" value={formData.name} disabled sx={{ marginBottom: "15px" }} />
                   <TextField fullWidth label="Email" type="email" name="email" value={formData.email} disabled sx={{ marginBottom: "15px" }} />
                   <TextField fullWidth label="Appointment Date" type="date" name="date" InputLabelProps={{ shrink: true }} value={formData.date} onChange={handleChange} required sx={{ marginBottom: "15px" }} />
                   <TextField fullWidth label="Appointment Time" type="time" name="time" InputLabelProps={{ shrink: true }} value={formData.time} onChange={handleChange} required sx={{ marginBottom: "15px" }} />
-                  
+
                   {/* Doctor Selection Dropdown */}
                   <TextField select fullWidth label="Select Doctor" name="doctor" value={formData.doctor} onChange={handleChange} required sx={{ marginBottom: "20px" }}>
                     {loading ? (
